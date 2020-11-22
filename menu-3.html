@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T All케어플러스</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="slider.js"></script>
+
+    <style>
+        :root {
+            --swiper-theme-color: #a8a8a8;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="top-menu">
+            <nav>
+                <h1>
+                    <a href="index.html"><img src="img/logo.svg" alt="T All케어플러스" class="logo"></a>
+                </h1>
+                <div class="mobile-menu">
+                    <i class="xi-bars xi-2x"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="menu-button"><a href="menu-1.html">도난/분실했을 경우</a></li>
+                        <li class="menu-button"><a href="menu-2.html">파손된 경우</a></li>
+                        <li class="menu-button active"><a href="menu-3.html">수리 대행 서비스</a></li>
+                        <li class="menu-button"><a href="menu-4.html">자주 하는 질문 </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Swiper -->
+    <!--      수리 대행 서비스-->
+    <div class="menu-content show ">
+        <div class="box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/img-03-1.svg">
+                        <p>당황하지 마세요, <br>빠르게 처리해 드리겠습니다.</p>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-03-2.svg">
+                        <p>SK텔레콤 고객센터를 통해 신고를 합니다. <br>080-011-6000(무료)</p>
+                        <div class="links">
+                            <div class="app-down"><a href="#"><img src="img/btn_googleplay_download.svg" style="cursor: pointer;"></a></div>
+                            <div class="app-down"><a href="#"><img src="img/btn_appstore_download.svg"></a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-03-3.svg">
+                        <p>T All케어플러스 앱에서 T All케어 코디의 방문 장소와 시간을 설정합니다.<br>
+                            <span><a href="#">www.tallcare.co.kr</a></span> 또는 <span>1599-4962 </span>에서도 청구 가능합니다.</p>
+                        
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-03-4.svg">
+                        <p>약속된 시간과 장소에 T All케어 코디가 방문합니다. <br>파손폰은 안전하게 봉인되어 서비스 센터에 전달됩니다.</p>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-03-5.svg">
+                        <p>문자 메시지로 안내 받은 결제 방법으로<br> 자기부담금을 납부합니다.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-03-6.svg">
+                        <p>원하는 장소로 수리가 완료된 휴대폰을<br> 안전하게 배송해 드립니다.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-03-7.svg">
+                        <p>심사 승인이 완료되면 신청하신 계좌로<br> 보험 보상금이 지급됩니다.</p>
+                    </div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <hr style="height:1px;border-width:0;color:red;background-color:#eaeaea; margin-top: 30px;">
+
+    <footer>
+        <p class="footer-copy">
+            © Copyright Asurion All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                //        type: 'progressbar',
+
+
+            },
+        });
+    </script>
+<!--
+    <script>
+        for (let i = 0; i < 4; i++) {
+            $('.menu-button').eq(i).click(function() {
+                $('.menu-button').removeClass('active');
+                $('.menu-content').removeClass('show');
+                $('.menu-button').eq(i).addClass('active');
+                $('.menu-content').eq(i).addClass('show');
+            });
+        }
+    </script>
+-->
+
+
+    <!--
+   <script>
+     $(document).ready(function(){
+          $("p").hide();
+          // $("ul > li:first-child a").next().show();
+          $("ul li a").click(function(){
+            $(this).next().slideToggle(300);
+            // $(this).next().slideDown(300);
+            $("ul li a").not(this).next().slideUp(300);
+            return false;
+          });
+          $("ul li a").eq(0).trigger("click");
+        });
+    
+    </script>
+-->
+
+</body></html>

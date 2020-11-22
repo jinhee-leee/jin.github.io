@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T All케어플러스</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="top-menu">
+            <nav>
+                <h1>
+                    <a href="index.html"><img src="img/logo.svg" alt="T All케어플러스" class="logo"></a>
+                </h1>
+                <div class="mobile-menu">
+                    <i class="xi-bars xi-2x"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="menu-button"><a href="menu-1.html">도난/분실했을 경우</a></li>
+                        <li class="menu-button"><a href="menu-2.html">파손된 경우</a></li>
+                        <li class="menu-button"><a href="menu-3.html">수리 대행 서비스</a></li>
+                        <li class="menu-button active"><a href="menu-4.html">자주 하는 질문 </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Swiper -->
+    <!--자주 하는 질문-->
+    <div class="menu-content show">
+
+        <div class="wrapper center-block">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading active" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             <img src="img/ico_Q.svg" class="faq-icon">   아이폰 유저인데 파손폰 수리 센터 안내를 받을 수 있을까요?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p class="collapse-title">애플 공식 서비스 센터 안내</p>
+                            <ul>
+                                <li>유베이스 센터 찾기(<a href="#">svc.ubase.co.kr</a>) : 유베이스 센터 방문 시, T All케어플러스 고객은 수리 비용에서 10,000원 할인됩니다.
+                                </li>
+                                <li>투바 센터 찾기 (<a href="#">www.tuva.co.kr</a>)
+                                </li>
+                                <li>위니아 에이드 센터 찾기(<a href="#">www.winiaaid.com</a>)
+                                </li>
+                                <li>앙츠 센터 찾기 (<a href="#">www.iantz.co.kr</a>)
+                                </li>
+                            </ul>
+                            이 외 애플 공식 서비스센터는 애플 고객지원 페이지를 참고하시기 바랍니다. (<a href="#">https://support.apple.com/ko-kr/iphone/repair/service</a>)
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <img src="img/ico_Q.svg" class="faq-icon">   SK직영점이나 AS센터에서 사고 접수를 할 수 있나요?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            서류안내 및 관련 양식 보내 드리는 순서로 진행하고 있어 사고 접수 전에 팩스 접수 불가합니다.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <img src="img/ico_Q.svg" class="faq-icon">  수리센터 결제 후 영수증 분실했습니다. 어떻게 해야 하나요?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            대체가능 서류 : 카드영수증(해당 카드사 문의) / 현금영수증(국세청 사이트) / AS센터 재발급 요청
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                               <img src="img/ico_Q.svg" class="faq-icon">   팩스를 사용할 수 없습니다. 서류를 우편으로 보내고 싶어요
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            구비서류는 고객님의 개인정보가 기재되어 있기 때문에 고객 정보 보호를 위해 우편으로 서류를 받지 않습니다.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                               <img src="img/ico_Q.svg" class="faq-icon">   보상받은 단말기가 불량이에요. 어떻게 교환받을 수 있나요?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            보상기변 후 14일 이내에만 교환이 가능합니다. (아이폰은 9일 이내)
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <img src="img/ico_Q.svg" class="faq-icon">  이어폰, 충전기, 액세서리, USIM, 배터리도 보상을 받을 수 있나요?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div class="panel-body">
+                            제조사 기준에 의한 액세서리 및 소모품은 보상에서 제외됩니다.(ex. 터치펜, S펜, 배터리 등)
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                               <img src="img/ico_Q.svg" class="faq-icon">   분실(도난)된 경우 현금으로 보상받을 수 있나요?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                        <div class="panel-body">
+                            현금보상은 불가능합니다. 분실(도난)사고시 동일한 기종(색상무관)으로 드리며, 단종(이동통신사 기준) 되었을 경우 또는 단말기 공급이 부족하여 원활한 보상진행이 어려운 경우에 한하여 해당 기기와 동급/ 유사 기종으로만 보상이 가능합니다.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingeight">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                               <img src="img/ico_Q.svg" class="faq-icon">   보험상품을 변경하고 싶어요
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseeight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingeight">
+                        <div class="panel-body">
+                            신규/번호이동/기기변경일로 부터 60일 이내에 가입가능한 상품으로 변경이 가능합니다. 단, 보험 담보기간은 최초 가입일 기준으로 산정됩니다.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingnine">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                                <img src="img/ico_Q.svg" class="faq-icon">  분실(도난) 단말기를 찾았어요. 어떻게 해야 하나요?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapsenine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingnine">
+                        <div class="panel-body">
+                            보상으로 기기 변경 후 14일 이내에 분실단말기를 찾으셨다면 보상단말기는 반납하신 뒤 자기부담금 및 초과금에 대한 환불을 받으실 수 있습니다. 단 , 보상으로 기기변경 후 14일 경과하였다면, 관련법률에 의해 분실 휴대폰은 보험사의 소유가 되며, 이에 대한 모든 권리는 보험사에 양도되기 때문에 보상센터로 습득 단말기를 발송해 주셔야 됩니다.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer-con">
+        <hr style="height:1px;border-width:0;color:red;background-color:#eaeaea; margin-top: 30px;">
+
+        <footer>
+            <p class="footer-copy">
+                © Copyright Asurion All Rights Reserved.
+            </p>
+        </footer>
+    </div>
+
+
+    <script>
+        $('.panel-collapse').on('show.bs.collapse', function() {
+            $(this).siblings('.panel-heading').addClass('active');
+        });
+
+        $('.panel-collapse').on('hide.bs.collapse', function() {
+            $(this).siblings('.panel-heading').removeClass('active');
+        });
+
+    </script>
+</body>
+
+</html>

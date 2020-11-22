@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T All케어플러스</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="slider.js"></script>
+
+    <style>
+        :root {
+            --swiper-theme-color: #a8a8a8;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="top-menu">
+            <nav>
+                <h1>
+                    <a href="index.html"><img src="img/logo.svg" alt="T All케어플러스" class="logo"></a>
+                </h1>
+                <div class="mobile-menu">
+                    <i class="xi-bars xi-2x"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="menu-button active"><a href="menu-1.html">도난/분실했을 경우</a></li>
+                        <li class="menu-button"><a href="menu-2.html">파손된 경우</a></li>
+                        <li class="menu-button"><a href="menu-3.html">수리 대행 서비스</a></li>
+                        <li class="menu-button"><a href="menu-4.html">자주 하는 질문 </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Swiper -->
+    <!--도난/분실-->
+
+    <div class="menu-content">
+        <div class="box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/img-01-1.svg" class="desktop-view">
+                        <img src="img/img-m-01-1.svg" class="mobile-view">
+                        <p>당황하지 마세요, <br>빠르게 처리해 드리겠습니다.</p>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-01-2.svg" class="desktop-view">
+                        <img src="img/img-m-01-2.svg" class="mobile-view">
+                        <p>SK텔레콤 고객센터를 통해 신고를 합니다. <br>080-011-6000(무료)</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-01-3.svg" class="desktop-view">
+                        <img src="img/img-m-01-3.svg" class="mobile-view">
+                        <p>내 명의가 아닌 다른 사람의 휴대폰에서<br> 앱을 다운받아 보상 청구를 할 수 있습니다.</p>
+                        <div class="links">
+                            <div class="btn-app">
+                                <a href="#"><img src="img/ico-google-play.svg"></a>
+                            </div>
+                            <div class="btn-app">
+                                <a href="#"><img src="img/ico_app_store.svg"></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-01-4.svg" class="desktop-view">
+                        <img src="img/img-m-01-4.svg" class="mobile-view">
+                        <p>T All케어플러스 앱을 사용하면 <br>쉽고 빠른 보상 청구가 가능합니다.<br>
+                            <span><a href="#">www.tallcare.co.kr</a></span> 또는<br> <span>1599-4962 </span>에서도 청구 가능합니다.</p>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-01-5.svg" class="desktop-view">
+                        <img src="img/img-m-01-5.svg" class="mobile-view">
+                        <p>문자 메시지로 안내 받은 결제 방법으로<br> 자기부담금을 납부합니다.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img-01-6.svg" class="desktop-view">
+                        <img src="img/img-m-01-6.svg" class="mobile-view">
+                        <p>당일 보상폰을 받을 수 있습니다.<br>전국 오후 1시(서울/수도권 3시) 이전에 <br>자기부담금을 납부 시</p>
+                    </div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer>
+        <hr style="height:1px;border-width:0;color:red;background-color:#eaeaea;">
+        <p class="footer-copy">
+            © Copyright Asurion All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                //        type: 'progressbar',
+
+
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
